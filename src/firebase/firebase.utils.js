@@ -10,6 +10,7 @@ const firebaseConfig = {
   messagingSenderId: "349314584367",
   appId: "1:349314584367:web:dba1b188153e3384451bda"
 };
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
