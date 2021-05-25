@@ -2,16 +2,17 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-const firebaseConfig = {
-  apiKey: "AIzaSyD2eptespf3oeK5UH5Rz0Prawj07lXC6Rs",
-  authDomain: "e-commerce-fb937.firebaseapp.com",
-  projectId: "e-commerce-fb937",
-  storageBucket: "e-commerce-fb937.appspot.com",
-  messagingSenderId: "349314584367",
-  appId: "1:349314584367:web:dba1b188153e3384451bda"
+const config = {
+  apiKey: 'AIzaSyCdHT-AYHXjF7wOrfAchX4PIm3cSj5tn14',
+  authDomain: 'crwn-db.firebaseapp.com',
+  databaseURL: 'https://crwn-db.firebaseio.com',
+  projectId: 'crwn-db',
+  storageBucket: 'crwn-db.appspot.com',
+  messagingSenderId: '850995411664',
+  appId: '1:850995411664:web:7ddc01d597846f65'
 };
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+
+firebase.initializeApp(config);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
